@@ -1,13 +1,14 @@
-/* --- MODERN UI OVERHAUL (FINAL & COMPLETE) --- */
-/* Universal Settings & Font Import */
+/* --- I am Suraj , And yes i Used Gemini Pro for CSS Stylesheet .
+Because noone can remember all these stuff of css. Thanks --- */
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 :root {
     --primary-blue: #007BFF;
     --primary-blue-dark: #0056b3;
-    --background-dark: #0f172a; /* A deep, professional navy blue */
+    --background-dark: #0f172a; 
     --text-dark: #1f2937;
-    --text-light: #f8f9fa; /* Light text for header/footer */
+    --text-light: #f8f9fa; 
     --text-muted: #6c757d;
     --card-background: #ffffff;
     --border-color: #e5e7eb;
@@ -37,7 +38,6 @@ body {
     padding: 0 20px;
 }
 
-/* --- Header with Restored Navigation --- */
 header {
     background: transparent;
     padding: 20px 0;
@@ -83,7 +83,6 @@ header nav a:hover {
     background-color: var(--primary-blue-dark);
 }
 
-/* --- Global Main Content Styling --- */
 main {
     background: var(--card-background);
     padding: 40px;
@@ -92,7 +91,6 @@ main {
     animation: fadeIn 0.5s ease-out;
 }
 
-/* --- Home Page Specific Styles --- */
 .home-content {
     text-align: center;
 }
@@ -123,7 +121,6 @@ main {
     box-shadow: 0 8px 30px rgba(0, 123, 255, 0.5);
 }
 
-/* --- Profile Button (Sidebar Trigger) --- */
 .profile-button {
     background: none;
     border: 2px solid rgba(255, 255, 255, 0.5);
@@ -146,7 +143,6 @@ main {
     height: 24px;
 }
 
-/* --- Sidebar Overlay & Sidebar --- */
 #sidebar-overlay {
     position: fixed; top: 0; left: 0; width: 100%; height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
@@ -205,7 +201,6 @@ body.sidebar-pinned #sidebar-overlay {
     background-color: #991b1b;
 }
 
-/* --- Flash Messages --- */
 .flash-messages-container {
     position: fixed; top: 100px; right: 30px; z-index: 1000;
     display: flex; flex-direction: column; gap: 12px;
@@ -221,9 +216,8 @@ body.sidebar-pinned #sidebar-overlay {
 .flash.error { background-color: var(--error-bg); color: var(--error-text); border-color: #ef4444; }
 .flash.fade-out { opacity: 0; transform: translateX(20px); }
 
-/* --- Modern Form Styles --- */
 .modern-form {
-    padding: 0; /* Let main container handle padding */
+    padding: 0; 
 }
 .modern-form h3, .bookings-list h3, .schedule-list h3 {
     text-align: center; margin-bottom: 35px;
@@ -248,7 +242,6 @@ body.sidebar-pinned #sidebar-overlay {
 }
 .input-with-icon:focus-within svg { color: var(--primary-blue); }
 
-/* --- Table Styles --- */
 .bookings-list, .schedule-list { overflow-x: auto; }
 table { width: 100%; border-collapse: separate; border-spacing: 0; }
 th, td { padding: 18px 15px; text-align: left; border-bottom: 1px solid var(--border-color); }
@@ -259,13 +252,11 @@ table thead tr:first-child th:last-child { border-top-right-radius: 10px; }
 table tbody tr:last-child td:first-child { border-bottom-left-radius: 10px; }
 table tbody tr:last-child td:last-child { border-bottom-right-radius: 10px; }
 
-/* --- PNR/Empty States --- */
 .pnr-status-result, .no-bookings, .no-trains {
     text-align: center; color: var(--text-muted); padding: 40px 20px;
     background: #f8f9fa; border-radius: 12px; margin-top: 20px;
 }
 
-/* --- Profile Display Page --- */
 .profile-page { padding: 0; }
 .profile-header {
     display: flex; align-items: center; gap: 25px; padding: 30px;
@@ -294,7 +285,6 @@ table tbody tr:last-child td:last-child { border-bottom-right-radius: 10px; }
     border-top: 1px solid var(--border-color);
 }
 
-/* --- Cancel Button --- */
 .cancel-button {
     background-color: #ef4444; color: #ffffff; border: none; padding: 8px 12px;
     border-radius: 6px; font-size: 14px; font-weight: 500; cursor: pointer;
@@ -302,7 +292,6 @@ table tbody tr:last-child td:last-child { border-bottom-right-radius: 10px; }
 }
 .cancel-button:hover { background-color: #dc2626; transform: scale(1.05); }
 
-/* --- Schedule Search Form --- */
 .search-form-container {
     background-color: #f8f9fa; padding: 30px; border-radius: 12px;
     margin-bottom: 30px;
@@ -336,7 +325,6 @@ footer {
     color: rgba(255, 255, 255, 0.6);
 }
 
-/* --- Animations --- */
 @keyframes fadeIn {
     from { opacity: 0; transform: translateY(-20px); }
     to { opacity: 1; transform: translateY(0); }
@@ -346,8 +334,6 @@ footer {
     to { opacity: 1; transform: translateX(0); }
 }
 
-/* ... existing css ... */
-/* --- NEW Styles for Admin Dashboard --- */
 .admin-header {
     display: flex;
     justify-content: space-between;
